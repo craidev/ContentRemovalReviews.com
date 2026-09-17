@@ -835,15 +835,6 @@
       ]
     },
     {
-      "@type": "VideoObject",
-      "name": "How we remove the impossible. ContentRemoval.com",
-      "description": "Founder Frankie Lee explains how Content Removal takes down harmful online content other firms call impossible.",
-      "thumbnailUrl": "https://fast.wistia.com/embed/medias/8b7pourx48/swatch",
-      "uploadDate": "2026-07-01T09:00:00+00:00",
-      "duration": "PT1M49S",
-      "embedUrl": "https://fast.wistia.net/embed/iframe/8b7pourx48"
-    },
-    {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
@@ -1045,6 +1036,19 @@
     .logostrip{display:flex;gap:22px 34px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:18px}
     .logostrip img{max-height:33px;width:auto;flex-shrink:1;min-width:0}
 
+    /* Rating card, filters, badges */
+    .rating-card{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 30px;margin:30px auto 0;max-width:720px;box-shadow:0 1px 3px rgba(0,0,0,.04);text-align:left}
+    .rating-big{font-family:var(--display);font-weight:600;font-size:56px;line-height:1;color:var(--ink);letter-spacing:-.03em}
+    .rating-marks{list-style:none;display:grid;gap:6px;font-size:14px;color:var(--ink);padding-left:22px;border-left:1px solid var(--line)}
+    .tick{color:var(--blue);font-weight:600;margin-right:6px}
+    .filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:-20px 0 34px}
+    .filter{font-family:var(--body);font-size:14px;padding:9px 18px;border-radius:999px;border:1px solid var(--btn-border);background:var(--white);color:var(--ink);cursor:pointer}
+    .filter.is-active{background:var(--blue);border-color:var(--blue);color:#fff}
+    .review-card[hidden]{display:none}
+    .review-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+    .review-meta .review-stars{margin-bottom:0}
+    .verified{font-size:12px;color:#137a3a;background:#EAF7EE;border-radius:6px;padding:3px 8px;font-weight:500;white-space:nowrap}
+
     /* Stats */
     .stat{text-align:center;padding:26px 18px}
     .stat .display{font-size:38px;color:var(--blue);display:block;line-height:1.1}
@@ -1118,6 +1122,9 @@
       .btn{white-space:normal;height:auto;min-height:46px;padding-top:10px;padding-bottom:10px;text-align:center}
       .hero-cta .btn{width:100%}
       .cta-panel{padding:52px 24px}
+      .rating-card{padding:20px;gap:18px;text-align:center;justify-content:center}
+      .rating-marks{padding-left:0;border-left:0;text-align:left}
+      .nav-cta .btn-primary{font-size:13px;padding:0 12px}
       .foot-grid{grid-template-columns:1fr}
       .nav-cta .btn-outline{display:none}
       .nav-cta .btn-primary{height:40px;min-height:40px;padding:0 14px;font-size:14px;white-space:nowrap}
@@ -1126,7 +1133,6 @@
   </style>
 
   <script src="https://fast.wistia.com/player.js" async></script>
-  <script src="https://fast.wistia.com/embed/8b7pourx48.js" async type="module"></script>
   <script src="https://fast.wistia.com/embed/ixu7xlyynr.js" async type="module"></script>
   <script src="https://fast.wistia.com/embed/r6wbjyh3hh.js" async type="module"></script>
   <script src="https://fast.wistia.com/embed/3n2s9gsfpj.js" async type="module"></script>
@@ -1150,42 +1156,40 @@
         <a href="#faq">FAQ</a>
       </div>
       <div class="nav-cta">
-        <a class="btn btn-outline" href="https://www.contentremoval.com/contact">Contact</a>
-        <a class="btn btn-primary" href="https://www.contentremoval.com/free-exposure-scan">Free Exposure Scan</a>
+        <a class="btn btn-primary" href="https://www.contentremoval.com" rel="noopener">Visit ContentRemoval.com</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="pill" style="margin-bottom:28px">⭐ Client reviews and testimonials</div>
-        <h1>Content removal reviews: <span class="blue">ContentRemoval.com</span> clients on the results</h1>
-        <p class="lead" style="margin-top:18px;max-width:540px">Every review of ContentRemoval.com content removal services on this page is from a real, named client. Many come with a video testimonial or a full case study to match. Real clients, real results.</p>
-        <div class="rating-row">
-          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-          <span style="font-weight:600;font-size:18px">5.0</span>
-          <span class="muted" style="font-size:14px">from published client reviews · named and verified</span>
+    <div class="wrap" style="max-width:860px;text-align:center">
+      <div class="pill" style="margin-bottom:26px">⭐ Client reviews and testimonials</div>
+      <h1>Content removal reviews: <span class="blue">ContentRemoval.com</span> clients on the results</h1>
+      <p class="lead" style="margin:18px auto 0;max-width:600px">Every review of ContentRemoval.com content removal services on this page is from a real, named client. Many come with a video testimonial or a full case study to match.</p>
+      <div class="rating-card">
+        <div class="rating-big">5.0</div>
+        <div>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="muted" style="font-size:14px;margin-top:6px">Based on published client reviews · named and verified</p>
         </div>
-        <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="#reviews">Read the reviews</a>
-          <a class="btn btn-outline btn-lg" href="https://www.contentremoval.com/free-exposure-scan">Book a free Exposure Scan</a>
-        </div>
+        <ul class="rating-marks">
+          <li><span class="tick">✓</span> Named clients</li>
+          <li><span class="tick">✓</span> Video testimonials</li>
+          <li><span class="tick">✓</span> Linked case studies</li>
+        </ul>
       </div>
-      <div>
-        <div class="video-frame">
-          <wistia-player media-id="8b7pourx48" aspect="1.7777777777777777"></wistia-player>
-        </div>
-        <p class="muted" style="text-align:center;font-size:13px;margin-top:10px;line-height:1.4">Meet <a href="https://www.contentremoval.com/frankie-lee" style="text-decoration:none;font-weight:500">Frankie Lee, Founder</a></p>
-        <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:22px">Trusted by the people and brands you know</p>
-        <div class="logostrip">
-          <img src="/img/logo-danone.png" alt="Danone" style="height:33px" loading="eager" />
-          <img src="/img/logo-hismile.png" alt="Hismile" style="height:27px" loading="eager" />
-          <img src="/img/logo-oodie.png" alt="The Oodie" style="height:23px" loading="eager" />
-          <img src="/img/logo-rocnation.png" alt="Roc Nation" style="height:25px" loading="eager" />
-          <img src="/img/logo-sweat.png" alt="Sweat" style="height:18px" loading="eager" />
-        </div>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-primary btn-lg" href="#reviews">Read the reviews</a>
+        <a class="btn btn-outline btn-lg" href="#reviews" data-filter-jump="video">Watch video testimonials</a>
+      </div>
+      <p style="color:var(--muted);font-size:13px;margin-top:40px">Trusted by the people and brands you know</p>
+      <div class="logostrip">
+        <img src="/img/logo-danone.png" alt="Danone" style="height:33px" loading="eager" />
+        <img src="/img/logo-hismile.png" alt="Hismile" style="height:27px" loading="eager" />
+        <img src="/img/logo-oodie.png" alt="The Oodie" style="height:23px" loading="eager" />
+        <img src="/img/logo-rocnation.png" alt="Roc Nation" style="height:25px" loading="eager" />
+        <img src="/img/logo-sweat.png" alt="Sweat" style="height:18px" loading="eager" />
       </div>
     </div>
   </header>
@@ -1200,145 +1204,164 @@
         <p class="lead">Best first. Video testimonials play inline. Reviews with a full case study link straight to it.</p>
       </div>
       <span id="videos"></span>
+      <div class="filters" role="tablist" aria-label="Filter reviews">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All reviews</button>
+        <button class="filter" data-filter="video" role="tab" aria-selected="false">Video testimonials</button>
+        <button class="filter" data-filter="case" role="tab" aria-selected="false">With case study</button>
+      </div>
       <div class="review-wall">
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="false" data-case="true">
           <div class="review-head">
             <img class="avatar" src="/img/kayla-itsines.webp" alt="Kayla Itsines" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Kayla Itsines</p><p class="muted review-role">Founder, Sweat.com · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"Frankie and his team at Content Removal relentlessly protected our brand in the 7 years leading up to our first exit."</blockquote>
           <p><a class="review-link" href="https://www.contentremoval.com/sweat-case-study">Read the full case study →</a></p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="true">
           <div class="review-head">
             <img class="avatar" src="/img/alex-hormozi.webp" alt="Alex Hormozi" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Alex Hormozi</p><p class="muted review-role">Acquisition.com · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"These fake accounts not only diluted my brand presence but also risked misleading my vast follower base with counterfeit information. Content Removal removed these accounts in days."</blockquote>
           <div class="review-video"><wistia-player media-id="ixu7xlyynr" aspect="0.5678233438485805" style="aspect-ratio:0.5678233438485805"></wistia-player></div>
           <p><a class="review-link" href="https://www.contentremoval.com/alex-hormozi">Read the full case study →</a></p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/william-brown.webp" alt="William Brown" loading="lazy" width="46" height="46" />
             <div><p class="review-name">William Brown</p><p class="muted review-role">BuildGrowAndExit.com · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"I spent a lot of money on some complex problems we were trying to solve, and nobody could fix them. We had almost given up. Then along comes Frankie: solved in about six days, for about a fifth of what other companies had charged us. I could not be happier. If you are doubting working with Frankie, you are crazy. Highly recommend."</blockquote>
           <div class="review-video"><wistia-player media-id="r6wbjyh3hh" aspect="0.5642633228840125" style="aspect-ratio:0.5642633228840125"></wistia-player></div>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/laurence-thomas.webp" alt="Laurence Thomas" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Laurence Thomas</p><p class="muted review-role">Hey Ewe · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"We had content copied and put online. A couple of other removal companies tried and were unsuccessful. Content Removal got it taken down very, very quickly. Can't recommend them enough; they have been a lifesaver for us."</blockquote>
           <div class="review-video"><wistia-player media-id="3n2s9gsfpj" aspect="0.5660377358490566" style="aspect-ratio:0.5660377358490566"></wistia-player></div>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/phil-graham.webp" alt="Phil Graham" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Phil Graham</p><p class="muted review-role">Phil-Graham.com · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"We have got thousands of clients and thousands of people that follow us. The last thing we need is a fake profile of me trying to sell them stupid stuff. They have all been removed. Frankie is the man when it comes to getting rid of fake accounts."</blockquote>
           <div class="review-video"><wistia-player media-id="15htpf7zoz" aspect="0.565149136577708" style="aspect-ratio:0.565149136577708"></wistia-player></div>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="false" data-case="true">
           <div class="review-head">
             <img class="avatar" src="/img/brinkley-davies.webp" alt="Brinkley Davies" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Brinkley Davies</p><p class="muted review-role">Athlete and Influencer · Reputation Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Reputation Protection</span>
           <blockquote>"Content Removal shows a level of professionalism and compassion that is hard to find. Within 7 days they had everything back to normal, protecting my name, brand, and image. Highly recommended."</blockquote>
           <p><a class="review-link" href="https://www.contentremoval.com/defamation-case-study">Read the full case study →</a></p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="false" data-case="true">
           <div class="review-head">
             <div class="avatar-initials" aria-hidden="true">SS</div>
             <div><p class="review-name">Shauna Smith</p><p class="muted review-role">Private Image Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Private Image Protection</span>
           <blockquote>"All my images and videos were removed in 72 hours. The police said they couldn't help me. Content Removal went above and beyond."</blockquote>
           <p><a class="review-link" href="https://www.contentremoval.com/revenge-porn-case-study">Read the full case study →</a></p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/alex-fedotoff.webp" alt="Alex Fedotoff" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Alex Fedotoff</p><p class="muted review-role">AF Media LLC · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"Frankie helped us remove negative reviews about our company written by people who had never experienced our service. We tried to remove them for a long time. He was the one to actually do it. If you are considering working with Frankie, I highly recommend it. He delivers."</blockquote>
           <div class="review-video"><wistia-player media-id="aex60tnwc7" aspect="0.5633802816901409" style="aspect-ratio:0.5633802816901409"></wistia-player></div>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="false" data-case="true">
           <div class="review-head">
             <img class="avatar" src="/img/amy-hembrow.webp" alt="Amy Hembrow" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Amy Hembrow</p><p class="muted review-role">Saski Collection · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"Content Removal's team worked quickly and efficiently. The monetary value that we received as a result of stopping fraudulent companies profiting from selling fakes of our products was invaluable!"</blockquote>
           <p><a class="review-link" href="https://www.contentremoval.com/saski-case-study">Read the full case study →</a></p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/ahmed-ben-chaibah.webp" alt="Ahmed Ben Chaibah" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Ahmed Ben Chaibah</p><p class="muted review-role">Aqua Fun · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"Sometimes there is a link, a video or an article out there about you, your family or your business, and you want a way to remove it. I finally found the way. Frankie, you are a genius. Hit him up: within two days the links disappeared."</blockquote>
           <div class="review-video"><wistia-player media-id="eqnt3p2n0w" aspect="0.5669291338582677" style="aspect-ratio:0.5669291338582677"></wistia-player></div>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="false" data-case="true">
           <div class="review-head">
             <img class="avatar contain" src="/img/logo-sweat.png" alt="Sweat" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Sam Howarth</p><p class="muted review-role">Sweat · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"Since partnering with Content Removal's team in 2017, we have achieved significant improvements around our brand and IP protection. We cannot recommend them highly enough!"</blockquote>
           <p><a class="review-link" href="https://www.contentremoval.com/sweat-case-study">Read the full case study →</a></p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/alan-graves.webp" alt="Alan Graves" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Alan Graves</p><p class="muted review-role">DoNotAge.org · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"We were dealing with fake websites, ads and social media pages that copied our brand and were duping customers, costing us revenue. It was damaging our reputation. Content Removal removed all of the issues inside 48 to 96 hours."</blockquote>
           <div class="review-video"><wistia-player media-id="o5zwwwm5wq" aspect="0.75" style="aspect-ratio:0.75"></wistia-player></div>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="false" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/luke-betts.webp" alt="Luke Betts" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Luke Betts</p><p class="muted review-role">Neutonic · Brand Protection</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Brand Protection</span>
           <blockquote>"Highly recommend Frankie and his team. Having tried various avenues to get pirated content taken down online all with little to no success. Frankie over the course of a few days made huge inroads into our problems and I look forward to working with them in the future."</blockquote>
           <p class="muted review-source">via LinkedIn</p>
         </article>
 
-        <article class="card review-card">
+        <article class="card review-card" data-video="true" data-case="false">
           <div class="review-head">
             <img class="avatar" src="/img/malala-leides.webp" alt="Malala Leides" loading="lazy" width="46" height="46" />
             <div><p class="review-name">Malala Leides</p><p class="muted review-role">OnlyFans Creator · Leaked Content Removal</p></div>
           </div>
-          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <div class="review-meta"><div class="review-stars" aria-label="5 stars">★★★★★</div><span class="verified">✓ Verified client</span></div>
+          <span class="chip" style="margin-bottom:12px">Leaked Content Removal</span>
           <blockquote>"Someone told me they had seen my content leaked on various websites. I literally did not know what to do. Content Removal got back to me so quickly and removed the content within 24 hours. I am so happy with the job they have done. I will be using them in the future."</blockquote>
           <div class="review-video"><wistia-player media-id="mnzybejprr" aspect="0.5278592375366569" style="aspect-ratio:0.5278592375366569"></wistia-player></div>
         </article>
@@ -1568,20 +1591,6 @@
     </div>
   </section>
 
-  <!-- BOOKING -->
-  <section id="book">
-    <div class="wrap">
-      <div class="sec-head" style="margin-bottom:30px">
-        <h2>See what we'd find <span class="blue">about you</span></h2>
-        <p class="lead">Start where every one of these clients started: a free, confidential Exposure Scan with a senior specialist.</p>
-      </div>
-      <div class="booking">
-        <div class="iclosed-widget" data-url="https://app.iclosed.io/e/contentremoval/15min" title="Book a free Exposure Scan" style="width:100%"></div>
-      </div>
-      <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
-    </div>
-  </section>
-
   <!-- SUMMARY AND KEY FACTS -->
   <section id="about" class="band" style="padding:56px 0">
     <div class="wrap" style="max-width:900px">
@@ -1601,13 +1610,13 @@
   </section>
 
   <!-- CTA -->
-  <section style="padding-top:0">
+  <section id="book" style="padding-top:0">
     <div class="wrap">
       <div class="cta-panel">
-        <h2>Start with a free, confidential Exposure Scan</h2>
-        <p>We'll scan your digital footprint, show you exactly what's exposed, and recommend the fastest path to remove it, or tell you honestly if you don't need us.</p>
-        <a class="btn btn-white btn-lg" href="https://www.contentremoval.com/free-exposure-scan">Book Your Assessment</a>
-        <div class="cta-note">Free · Confidential · 15 minutes</div>
+        <h2>Ready to see what they saw?</h2>
+        <p>Every client on this page started with a free, confidential Exposure Scan at ContentRemoval.com. See exactly what is exposed about you and the fastest path to remove it.</p>
+        <a class="btn btn-white btn-lg" href="https://www.contentremoval.com/free-exposure-scan" rel="noopener">Book a free Exposure Scan</a>
+        <div class="cta-note">Free · Confidential · 15 minutes · on ContentRemoval.com</div>
       </div>
     </div>
   </section>
@@ -1626,7 +1635,6 @@
           <a href="#videos">Video testimonials</a>
           <a href="#case-studies">Case studies</a>
           <a href="#faq">FAQ</a>
-          <a href="#book">Book a free scan</a>
           <a href="#about">Key facts</a>
         </div>
         <div>
@@ -1646,5 +1654,22 @@
     </div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+  (function(){
+    var cards=[].slice.call(document.querySelectorAll('.review-card'));
+    var buttons=[].slice.call(document.querySelectorAll('.filter'));
+    function apply(f){
+      buttons.forEach(function(b){var on=b.getAttribute('data-filter')===f;b.classList.toggle('is-active',on);b.setAttribute('aria-selected',on?'true':'false');});
+      cards.forEach(function(c){
+        var show=f==='all'||(f==='video'&&c.getAttribute('data-video')==='true')||(f==='case'&&c.getAttribute('data-case')==='true');
+        if(show)c.removeAttribute('hidden');else c.setAttribute('hidden','');
+      });
+    }
+    buttons.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-filter'));});});
+    var jump=document.querySelector('[data-filter-jump]');
+    if(jump)jump.addEventListener('click',function(){apply(jump.getAttribute('data-filter-jump'));});
+  })();
+  </script>
+
 </body>
 </html>
