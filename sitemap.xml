@@ -1,4 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://contentremovalreviews.com/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>1.0</priority><image:image><image:loc>https://contentremovalreviews.com/img/brinkley-davies.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/kayla-itsines.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/alex-hormozi.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/hembrow-sisters.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/frankie-lee.webp</image:loc></image:image></url>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<!-- Sitemap for ContentRemovalReviews.com. One page: every ContentRemoval.com client review, video testimonial and case study link. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://contentremovalreviews.com/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/kayla-itsines.webp</image:loc>
+      <image:title>Kayla Itsines, founder of Sweat, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/alex-hormozi.webp</image:loc>
+      <image:title>Alex Hormozi, Acquisition.com, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/brinkley-davies.webp</image:loc>
+      <image:title>Brinkley Davies, ContentRemoval.com defamation removal client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/hembrow-sisters.webp</image:loc>
+      <image:title>The Hembrow sisters, founders of Saski Collection, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/william-brown.webp</image:loc>
+      <image:title>William Brown, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/laurence-thomas.webp</image:loc>
+      <image:title>Laurence Thomas, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/phil-graham.webp</image:loc>
+      <image:title>Phil Graham, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/alex-fedotoff.webp</image:loc>
+      <image:title>Alex Fedotoff, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/amy-hembrow.webp</image:loc>
+      <image:title>Amy Hembrow, Saski Collection, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/ahmed-ben-chaibah.webp</image:loc>
+      <image:title>Ahmed Ben Chaibah, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/alan-graves.webp</image:loc>
+      <image:title>Alan Graves, DoNotAge.org, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/luke-betts.webp</image:loc>
+      <image:title>Luke Betts, Neutonic, ContentRemoval.com client</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://contentremovalreviews.com/img/malala-leides.webp</image:loc>
+      <image:title>Malala Leides, ContentRemoval.com client</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/469ba9a8eeb28cea710ba7a39b9986557de3508e.jpg?image_crop_resized=720x1268</video:thumbnail_loc>
+      <video:title>Alex Hormozi review of ContentRemoval.com</video:title>
+      <video:description>Alex Hormozi of Acquisition.com on how ContentRemoval.com removed fake Instagram accounts impersonating him in days.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/ixu7xlyynr</video:player_loc>
+      <video:duration>15</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/98ff646270d60cefab6aa60f12f3750f887927b0.jpg?image_crop_resized=720x1276</video:thumbnail_loc>
+      <video:title>William Brown review of ContentRemoval.com</video:title>
+      <video:description>William Brown of BuildGrowAndExit.com on a complex removal solved in about six days at about a fifth of other quotes.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/r6wbjyh3hh</video:player_loc>
+      <video:duration>96</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/f1e44f56f11bd98cb386e2879f7005b9b47764d7.jpg?image_crop_resized=720x1272</video:thumbnail_loc>
+      <video:title>Laurence Thomas review of ContentRemoval.com</video:title>
+      <video:description>Laurence Thomas of Hey Ewe on copied content taken down quickly after other removal companies failed.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/3n2s9gsfpj</video:player_loc>
+      <video:duration>47</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/a910b3c74b9ccd9f35079ac9fd4ce9cbebee9ea7.jpg?image_crop_resized=720x1274</video:thumbnail_loc>
+      <video:title>Phil Graham review of ContentRemoval.com</video:title>
+      <video:description>Phil Graham on fake profiles targeting his clients being removed by ContentRemoval.com.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/15htpf7zoz</video:player_loc>
+      <video:duration>37</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/743edc2bb3c419b3ff5a76538a2893f469459b4a.jpg?image_crop_resized=720x1278</video:thumbnail_loc>
+      <video:title>Alex Fedotoff review of ContentRemoval.com</video:title>
+      <video:description>Alex Fedotoff of AF Media LLC on unfair reviews removed after a long unsuccessful effort elsewhere.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/aex60tnwc7</video:player_loc>
+      <video:duration>37</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/2b79239f9767cb19b6c975800cde017f14dbe8ae.jpg?image_crop_resized=720x1270</video:thumbnail_loc>
+      <video:title>Ahmed Ben Chaibah review of ContentRemoval.com</video:title>
+      <video:description>Ahmed Ben Chaibah of Aqua Fun on links about him removed within two days.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/eqnt3p2n0w</video:player_loc>
+      <video:duration>30</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/29d3f68237fee00fc3b755669552ae0d26e0676e.jpg?image_crop_resized=720x960</video:thumbnail_loc>
+      <video:title>Alan Graves review of ContentRemoval.com</video:title>
+      <video:description>Alan Graves of DoNotAge.org on fake websites, ads and social pages copying his brand removed inside 48 to 96 hours.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/o5zwwwm5wq</video:player_loc>
+      <video:duration>60</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://embed-ssl.wistia.com/deliveries/545dc40669fc48ead158262107e731d60634e220.jpg?image_crop_resized=720x1364</video:thumbnail_loc>
+      <video:title>Malala Leides review of ContentRemoval.com</video:title>
+      <video:description>Malala Leides, OnlyFans creator, on leaked content removed within 24 hours.</video:description>
+      <video:player_loc>https://fast.wistia.net/embed/iframe/mnzybejprr</video:player_loc>
+      <video:duration>46</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
 </urlset>
