@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://contentremovalreviews.com/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://contentremovalreviews.com/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>1.0</priority><image:image><image:loc>https://contentremovalreviews.com/img/brinkley-davies.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/kayla-itsines.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/alex-hormozi.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/hembrow-sisters.webp</image:loc></image:image><image:image><image:loc>https://contentremovalreviews.com/img/frankie-lee.webp</image:loc></image:image></url>
 </urlset>
